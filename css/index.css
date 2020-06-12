@@ -1,0 +1,1043 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  background: none;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+label.logo {
+  color: white;
+  font-size: 40px;
+  padding: 0 10px;
+  line-height: 50px;
+  font-weight: bold;
+  font-family: "Architects Daughter", cursive;
+}
+
+img.a {
+  float: left;
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.sidenav {
+height: 0%;
+width: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+overflow-y: hidden;
+transition: 0.5s;
+}
+
+.overlay {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 50px;
+font-family: 'Architects Daughter', cursive;
+}
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.sidenav .closebtn {
+position: absolute;
+top:0;
+right: 35px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.bar{
+  display: none;
+}
+.header-menu{
+  float: right;
+  color: white;
+  font-size: 15px;
+  padding: 0px 40px;
+  line-height: 60px;
+  font-family: 'Architects Daughter', cursive;
+}
+ul li{
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+a:visited, a:link{
+  text-decoration: none;
+  color: white;
+}
+a:hover,a.active{
+  background: none;
+  color: #0082e6;
+}
+
+img.e{
+  margin-left:30px;
+  margin-top: 10px;
+}
+
+footer{   
+  position: relative;
+  height: 30px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+}
+  font{
+      font-size: 12px;
+      text-align: center;
+  }
+.sec{
+  text-align: center;
+  font-size: 90px;
+  padding-top:50px;
+  padding-bottom: 30px;
+}
+
+.sec1{
+  text-align: center;
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'Comic Neue', cursive;
+  color: white;  
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.section{
+    width: 100%;
+    height: auto;
+    background: none;
+    margin-bottom: 40px;
+}
+
+/* loader */
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  animation-name: spin;
+  animation-duration: 2s;
+
+}
+
+@-webkit-keyframes spin {
+  0%   {opacity:0%;}
+  25%  {opacity:25%;}
+  50%  {opacity:50%;}
+  75%  {opacity:75%;}
+  100% {opacity:100%;}
+}
+
+@keyframes spin {
+  0%   {opacity:0%;}
+  25%  {opacity:25%;}
+  50%  {opacity:50%;}
+  75%  {opacity:75%;}
+  100% {opacity:100%;}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+
+/*Bottom Nav*/
+.column {
+  float: left;
+  width: 25%;
+  height:auto; 
+  font-family: 'Comic Neue', cursive;
+  font-weight:bold;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  text-align:left;
+  color:whitesmoke;
+  bottom: 50px;
+}
+
+.row1{
+  height: 50%;
+}
+h2{
+  margin-left:70px;
+}
+/*Social Media*/
+
+ul.abc{
+  display: flex;
+  margin-top:10px;
+}
+ul.abc li{
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+  color: #666;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+ul.abc li:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+ul.abc li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+}
+.fb:hover{
+  color: #3B5998;
+}
+.tw:hover{
+  color: #00acee;
+}
+.in:hover{
+  color: #e23670;
+}
+.lin:hover{
+  color: #2a6cbb;
+}
+
+.extra-div{
+  background:none;
+  padding-top: 50px;
+  border: medium navy;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+
+.extra-div:hover{
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0);
+  transform: translateY(-20px);
+}
+
+.column1 {
+  float: left;
+  margin-left:35px;
+  text-align: center;
+  width: 30%; 
+  height: 250px;
+  margin-bottom: 50px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  margin-left:50px;
+  text-align: center;
+  width: 15%; 
+  height: 100px;
+  margin-bottom: 100px; /* Should be removed. Only for demonstration */
+}
+
+.section1{
+  width: 100%;
+  background: none;
+}
+p{
+  font-family: 'Comic Neue', cursive;
+}
+
+img.btm1{
+   float:left; 
+   margin-top: 55px; 
+   margin-right: 20px; 
+   margin-left: 20px;
+}
+
+img.btm2{
+  float:left; 
+  width: 30px; 
+  height: 30px; 
+  margin-top: 35px; 
+  margin-right: 20px; 
+  margin-left: 20px;
+}
+#h21{
+  text-align: left !important;
+  margin-left:10px; 
+  margin-top: 10px !important; 
+  margin-bottom: 10px !important;
+}
+
+/**/
+#maindiv{
+  background-color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 40px;
+}
+
+.div1 {
+  display: inline-block;
+  animation: marquee 60s linear infinite;
+  padding: 40px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+}
+}
+
+a.x:hover{
+  color: rgb(199, 194, 194);
+  text-decoration: underline;
+}
+
+
+/*350*/
+
+@media screen and (min-width:318px) and (max-width: 370px){
+nav{
+  width: 100%;
+  height: 50px;
+  background: none;
+  padding-top:20px;
+  padding-bottom:0px;
+} 
+label.logo{
+  color: white;
+  font-size: 35px;
+  padding: 0 15px;
+  line-height: 70px;
+  font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
+}
+.sidenav a {
+  padding-top:10px;
+  font-size: 30px;}
+.sidenav .closebtn {
+  padding-top:35px;
+  right:30px; 
+font-size: 50px;}
+.bar{
+display: block;
+padding: 5px 30px;
+font-size:30px;
+line-height: 60px;
+float:right;
+cursor:pointer; 
+margin-right: 10px; 
+color: white;
+}
+.header-menu{
+  display: none;
+}
+.section{
+    width: 100%;
+    height:auto;
+    background: none;
+}
+  .sec{
+    text-align: center;
+    font-size: 80px;
+    top:50%;
+    left: 50%;
+} 
+.sec1{
+  padding-top:10px;
+    text-align: center;
+    font-size: 20px;
+    top:50%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom:30px;
+} 
+
+footer{   
+  position: relative;
+  height: 40px;
+  bottom: 0px;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+}
+  font{
+      font-size: 10px;
+      text-align: center;
+  }
+  .column {
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom:100px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 15px;
+}
+
+h2{
+  margin-left:50px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+}
+ul.abc{
+  display: flex;
+  margin-top:10px;
+  margin-left:30px;
+}
+
+.column1 {
+  float: left;
+  text-align: center;
+  width: 70%; 
+  height: 280px;
+  margin-bottom: 40px; /* Should be removed. Only for demonstration */
+}
+
+.extra-div{
+  background:none;
+  margin-left:50px;
+  padding-top: 0px;
+  border: medium navy;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+img.btm1{
+   float:left; 
+   margin-left:50px;
+   margin-top: 90px; 
+   margin-right: 20px; 
+}
+
+img.btm2{
+  float:left; 
+  margin-left:5px;
+  width: 30px; 
+  height: 30px; 
+  margin-top: 40px; 
+  margin-right: 20px;
+}
+#h21{
+  text-align: left !important;
+  margin-left:50px !important;
+  margin-right:50px !important; 
+  margin-top: 30px !important; 
+  margin-bottom: -20px !important;
+}
+.column2 {
+  float: left;
+  margin-left:10px;
+  text-align: center;
+  width: 45%; 
+  height: 100px;
+  margin-bottom: 100px; /* Should be removed. Only for demonstration */
+}
+
+}
+
+/*450*/
+
+@media screen and (min-width: 370px) and (max-width: 550px){
+nav{
+  width: 100%;
+  height: 50px;
+  background: none;
+  padding-top:30px;
+  padding-bottom:0px;
+} 
+label.logo{
+  color: white;
+  font-size: 30px;
+  padding: 0 15px;
+  line-height: 70px;
+  font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
+}
+.sidenav a {
+  padding-top:10px;
+  font-size: 30px;}
+.sidenav .closebtn {
+  padding-top:35px;
+  right:30px; 
+font-size: 60px;}
+.bar{
+display: block;
+padding: 5px 30px;
+font-size:40px;
+line-height: 60px;
+float:right;
+cursor:pointer; 
+margin-right: 10px; 
+color: white;
+}
+.header-menu{
+  display: none;
+}
+.section{
+    width: 100%;
+    height:auto;
+    background: none;
+}
+  .sec{
+    text-align: center;
+    font-size: 80px;
+    top:50%;
+    left: 50%;
+} 
+.sec1{
+  padding-top:30px;
+    text-align: center;
+    font-size: 20px;
+    top:50%;
+    left: 50%;
+    padding-bottom:30px;
+} 
+
+footer{   
+  position: relative;
+  height: 40px;
+  bottom: 0px;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+}
+  font{
+      font-size: 15px;
+      text-align: center;
+
+  }
+  .column {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom:-10px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 15px;
+}
+
+h2{
+  margin-left:50px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px;
+}
+
+.column1 {
+  float: left;
+  text-align: center;
+  width: 70%; 
+  height: 250px;
+  margin-bottom: 30px; /* Should be removed. Only for demonstration */
+}
+
+.extra-div{
+  background:none;
+  margin-left:50px;
+  padding-top: 0px;
+  border: medium navy;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+img.btm1{
+   float:left; 
+   margin-left:50px;
+   margin-top: 100px; 
+   margin-right: 20px; 
+}
+
+img.btm2{
+  float:left; 
+  margin-left:5px;
+  width: 30px; 
+  height: 30px; 
+  margin-top: 85px; 
+  margin-right: 20px;
+}
+#h21{
+  text-align: left !important;
+  margin-left:50px !important;
+  margin-right:50px !important; 
+  margin-top: 30px !important; 
+  margin-bottom: 10px !important;
+}
+.column2 {
+  float: left;
+  margin-left:10px;
+  text-align: center;
+  width: 45%; 
+  height: 100px;
+  margin-bottom: 100px; /* Should be removed. Only for demonstration */
+}
+}
+
+
+/*600*/
+
+@media screen and (min-width:550px) and (max-width: 788px){
+ 
+nav{
+  width: 100%;
+  height: 100px;
+  background: none;
+  padding-top:70px;
+  padding-bottom:0px;
+} 
+label.logo{
+  color: white;
+  font-size: 50px;
+  padding: 0 15px;
+  line-height: 70px;
+  font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
+}
+.sidenav a {
+  padding-top:10px;
+  font-size: 30px;}
+.sidenav .closebtn {right:10px; 
+font-size: 50px;}
+.bar{
+display: block;
+padding: 5px 30px;
+font-size:70px;
+line-height: 60px;
+float:right;
+cursor:pointer; 
+margin-right: 10px; 
+color: white;
+}
+.header-menu{
+  display: none;
+}
+.section{
+    width: 100%;
+    height:auto;
+    background: none;
+}
+  .sec{
+    text-align: center;
+    font-size: 100px;
+    top:50%;
+    left: 50%;
+} 
+.sec1{
+  padding-top:50px;
+    text-align: center;
+    font-size: 35px;
+    top:50%;
+    left: 50%;
+    padding-bottom:100px;
+} 
+
+footer{   
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+
+}
+  font{
+      font-size: 30px;
+      text-align: center;
+  }
+  .column {
+  float: left;
+  margin-left:10px;
+  margin-bottom:50px;
+  width: 48%;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 20px;
+}
+
+h2{
+  margin-left:50px;
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+}
+
+.column1 {
+  float: left;
+  text-align: center;
+  width: 90%; 
+  height: 250px;
+  margin-bottom: 50px; /* Should be removed. Only for demonstration */
+}
+
+.extra-div{
+  background:none;
+  margin-left:50px;
+  padding-top: 0px;
+  border: medium navy;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+img.btm1{
+   float:left; 
+   margin-left:30px;
+   margin-top: 120px; 
+   margin-right: 20px; 
+}
+
+img.btm2{
+  float:left; 
+  margin-left:-15px;
+  width: 30px; 
+  height: 30px; 
+  margin-top: 95px; 
+  margin-right: 20px;
+}
+#h21{
+  text-align: left !important;
+  margin-left:50px !important; 
+  margin-top: 30px !important; 
+  margin-bottom: 20px !important;
+}
+.column2 {
+  float: left;
+  margin-left:50px;
+  text-align: center;
+  width: 25%; 
+  height: 100px;
+  margin-bottom: 100px; /* Should be removed. Only for demonstration */
+}
+}
+
+/*1024*/
+
+@media screen and (min-width:789px) and (max-width: 1024px){
+ 
+nav{
+  width: 100%;
+  height: 100px;
+  background: none;
+  padding-top:70px;
+  padding-bottom:0px;
+} 
+label.logo{
+  color: white;
+  font-size: 50px;
+  padding: 0 15px;
+  line-height: 70px;
+  font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
+}
+.sidenav a {
+  padding-top:10px;
+  font-size: 60px;}
+.sidenav .closebtn {
+  padding-top:55px;
+  right:30px; 
+font-size: 50px;}
+.bar{
+display: block;
+padding: 5px 30px;
+font-size:70px;
+line-height: 60px;
+float:right;
+cursor:pointer; 
+margin-right: 10px; 
+color: white;
+}
+.header-menu{
+  display: none;
+}
+.section{
+    width: 100%;
+    height:auto;
+    background: none;
+}
+  .sec{
+    text-align: center;
+    font-size: 100px;
+    top:50%;
+    left: 50%;
+} 
+.sec1{
+  padding-top:50px;
+    text-align: justify;
+    font-size: 35px;
+    top:50%;
+    left: 50%;
+    padding-bottom:100px;
+} 
+
+footer{   
+  position: relative;
+  height: 40px;
+  bottom: 40px;
+  width: 100%;
+  background-color: none;
+  text-align: center;
+}
+  font{
+      font-size: 30px;
+      text-align: center;
+  }
+  .column {
+  float: left;
+  margin-left:80px;
+  width: 40%;
+  height: 230px;
+  padding-bottom:30px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  text-align:left;
+  color:whitesmoke;
+  font-size: 20px;
+}
+
+h2{
+  margin-left:50px;
+}
+
+.column1 {
+  float: left;
+  text-align: center;
+  width: 90%; 
+  height: 250px;
+  margin-bottom: 50px; /* Should be removed. Only for demonstration */
+}
+
+.extra-div{
+  background:none;
+  margin-left:50px;
+  padding-top: 0px;
+  border: medium navy;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+img.btm1{
+   float:left; 
+   margin-top: 75px; 
+   margin-right: 20px; 
+   margin-left: 20px;
+}
+
+img.btm2{
+  float:left; 
+  width: 30px; 
+  height: 30px; 
+  margin-top: 55px; 
+  margin-right: 20px; 
+  margin-left: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 50px; 
+  height: 50px;
+}
+.column2 {
+  float: left;
+  margin-left:40px;
+  text-align: center;
+  width: 15%; 
+  height: 100px;
+  margin-bottom: 100px; /* Should be removed. Only for demonstration */
+}
+}
+@media (max-width: 767px) {
+  .sec1 {
+    
+    padding: 20px  !important;
+  }
+  .sec {
+    font-size: 30px !important;
+    padding-bottom: 0px !important;
+  }
+  h1 {
+    font-size: 25px !important;
+  }
+  .column1 {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+  .column2 {
+    width: 100% !important;
+    float: none !important;
+    margin: 10px 0px !important;
+    height: auto !important;
+  }
+  h2 {
+    margin: 0px !important;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 8px !important;
+  }
+  
+  
+}
+*:not(.fab) {
+  font-family: Arial !important;
+  font-weight: 400 !important;
+}
+#myBtn {
+  width: 50px !important;
+  height: 50px !important;
+}

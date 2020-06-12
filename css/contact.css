@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0 1em;
+}
+
+/* #Loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  margin: -75px 0 0 -75px;
+  animation-name: opac;
+  animation-duration: 2s;
+}
+
+
+@-webkit-keyframes opac {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes opac {
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+#myDiv {
+  display: none;
+}
+
+/*Navbar*/
+nav {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+label img {
+  float: left;
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+}
+
+label span {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1em;
+  padding: 0 0.5em;
+  font-family: "Architects Daughter", cursive;
+}
+
+.bar {
+  display: none;
+}
+
+.header-menu {
+  float: right;
+  color: white;
+  font-family: "Architects Daughter", cursive;
+  font-size: 15px;
+  padding: 0px 2em;
+  line-height: 3em;
+}
+
+.header-menu ul li {
+  margin-right: 1em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.header-menu a {
+  color: white;
+}
+
+.header-menu a:hover,
+.header-menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Architects Daughter", cursive;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  z-index: 99;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  background: linear-gradient(45deg, purple, pink, lightpink);
+}
+
+.container-fluid {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: white;
+}
+
+.col-6 h1 {
+  font-size: 4em;
+  text-align: center;
+  justify-content: center;
+}
+
+.col-6 h3 {
+  margin: 1em 0em 0em 1em;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.col a {
+  color: white;
+  text-decoration: none;
+}
+
+.col a:hover,
+.col a:link,
+.col a:visited {
+  text-decoration: none;
+}
+
+.col .link:hover {
+  color: darkgray;
+}
+
+.col-12 h1 {
+  font-family: "Comic Neue", cursive;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 1em;
+}
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+footer span:nth-child(2) {
+  margin-left: 1em;
+}
+
+.left,
+.right {
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.row .col-4 img {
+  float: right;
+  padding: 1em;
+  width: 60%;
+  height: 100%;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.row .col-4 img:hover {
+  filter: grayscale(0);
+}
+
+.container-fluid .col-6 .row h1 {
+  padding-top: 1em;
+  text-align: left;
+  font-size: 1.5em;
+}
+.container-fluid .col-6 .row h2 {
+  text-align: left;
+  font-size: 1em;
+}
+
+.container-fluid .col-6 .row .imgLink {
+  width: 1em;
+  height: 1em;
+}
+
+.row .col {
+  color: white;
+  padding-left: 3em;
+}
+
+.row .col h1 {
+  font-size: 2em;
+  text-align: left;
+}
+
+.row .col h3 {
+  float: left;
+  font-size: 1em;
+}
+
+.row .col h5 {
+  float: left;
+  font-size: 1em;
+}
+
+.row .col {
+  padding-bottom: 0.5em;
+}
+
+.row .right h1 {
+  text-align: center;
+  margin-right: 2.5em;
+}
+
+/*Social Media*/
+
+ul.abc {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+ul.abc li {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  color: #666;
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.fb:hover {
+  color: #3b5998;
+}
+.tw:hover {
+  color: #00acee;
+}
+.in:hover {
+  color: #e23670;
+}
+.lin:hover {
+  color: #2a6cbb;
+}
+.you:hover {
+  color: #c4302b;
+}
+
+ul a {
+  color: white;
+}
+ul a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+ul a:visited {
+  text-decoration: none;
+}
+
+.contact .col-6 h1{
+  font-size: 3em;
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.contact .col-6 h3{
+  text-align: justify;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.contact .col-6 a{
+  color: white;
+  text-decoration: none;
+}
+
+.contact .col-6 a:visited,
+.contact .col-6 a:hover,
+.contact .col-6 a:link{
+  text-decoration: none;
+}
+
+.contact .col-6 a:hover{
+  color: gray;
+}
+
+.contact .col-6 img{
+  margin-left: 5em;
+}
+
+.contact .col-12 h1{
+  text-align: left;
+  margin-left: 1em;
+}
+

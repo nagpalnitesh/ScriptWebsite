@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="font-family: monospace;">Script Foundation</title>
+        <!-- Links and other tags -->
+        <meta charset="utf-8">
+        <link rel="icon" type="image/ico" href="../img/logo1.png"/> <!-- Favicon -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Comic+Neue&family=Lobster+Two:ital@1&family=Long+Cang&family=Sedgwick+Ave+Display&family=Londrina+Shadow&family=Kalam:wght@700&family=Architects+Daughter&family=Gloria+Hallelujah&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../css/blog.css"> 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       </head>
+    <!-- Scripts -->
+    <script type="text/javascript">
+      function openNav() {
+      document.getElementById("mySidenav").style.height = "100%";      
+      }
+      function closeNav() {
+      document.getElementById("mySidenav").style.height = "0";
+      }
+  </script>
+
+  <!-- Scripts End -->
+  <body onload="myFunction()" style="background-image: linear-gradient(45deg,rgb(21, 110, 145),rgb(1, 43, 59),rgb(1, 43, 59),rgb(1, 43, 59),rgb(8, 101, 137),rgb(1, 43, 59),rgb(8, 101, 137),rgb(1, 43, 59),rgb(1, 43, 59)); background-size: cover; background-repeat: no-repeat;">
+      <!--Loader-->
+      <div id="loader"><img src="../img/logo.png" style="width: 150px; height: 200px;"></div>
+      <div id="myDiv" class="animate-bottom"> 
+      <!--Scroll to top-->
+              <img src="../img/stt.png" onclick="topFunction()" id="myBtn" title="Go to top" style=" background-image: linear-gradient(45deg,purple,pink,lightpink">
+              <!-- Header -->
+
+              <nav>
+          <label class="logo"><img class="a e" src="../img/logo2.png">Script</label>
+          <div class="header-menu">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/community.html">Community</a></li>
+                <li><a href="../html/events.html">Events</a></li>
+                <li><a href="../html/blog.html">Blog</a></li>
+                <li><a href="../html/about.html">About Us</a></li>
+                <li><a href="../html/contactus.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay">
+                <a href="../index.html">Home</a>
+                <a href="../html/community.html">Community</a>
+                <a href="../html/events.html">Events</a>
+                <a href="../html/blog.html">Blog</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/contactus.html">Contact Us</a>
+            </div></div>
+            <span class="bar" onclick="openNav()">&#9776;</span>
+      </nav>  
+        <!-- Intro Section -->
+        <div class="section">
+                <img class="blog" src="../img/blog.png" >
+                <h1 class="sec"  style="font-family: 'Londrina Shadow', cursive; color: cornsilk;">Blog</h1>
+                <br>
+                <h3 class="sec1">Coming Soon.</h3>
+        </div>
+        <!--Bottom Nav-->
+        <div class="row">
+          <div class="column">
+            <h2 id="h21">About Us</h2>
+            <p id="h21">We are an organization that aspires to establish a platform for every student and professional who desires to learn something new and innovative. 
+             </p>
+          </div>
+          <div class="column">
+            <img class="btm1"src="../img/loc1.png"><h2 id="h21">Address</h2>
+            <p id="h21">308, Aggarwal Tower,<br> Plot No. 2, Sector-5, <br>Dwarka, New Delhi-11075</h2>
+            <br><img class="btm2" src="../img/mail.png"><h2 id="h21">Email</h2>
+            <p id="h21"><a class="x" href="mailto:support@scriptindia.org" target="_top">support@scriptindia.org</a></p>
+          </div>
+          <div class="column">
+            <h2 id="h21" class="h21">Quick Links</h2>
+            <ul id="h21">
+              <li><a href="../index.html">Home</a></li><br>
+              <li><a href="html/community.html">Community</a></li><br>
+              <li><a href="html/events.html">Events</a></li><br>
+              <li><a href="html/blog.html">Blog</a></li><br>
+              <li><a href="html/about.html">About Us</a></li><br>
+              <li><a href="html/contactus.html">Contact Us</a></li><br>
+          </ul>
+          </div>
+          <div class="column">
+            <h2 id="h21">Social Media</h2>
+              <ul class="abc" id="h21">
+                <li><a class="fb" href="https://www.facebook.com/scriptfoundationindia" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="tw"  href="https://twitter.com/ScriptFoundati1" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li> <a class="in" href="https://www.instagram.com/script_foundation/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li> <a class="lin" href="https://www.linkedin.com/company/script-foundation-india" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+          </div>
+        </div>
+        <!--Bottom Nav Ends-->
+        <!-- Footer -->  
+        <footer>
+            <p style="color: white; margin-top: 5px; margin-bottom: 3px;">
+                <font>&copy; <b style="font-family: 'Gloria Hallelujah', cursive; font-weight: bold;">Script Foundation. All rights reserved.</b></font>
+            </p>
+        </footer>
+        </div>
+           <!-- Script for goto top-->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <script>
+            var myVar;   
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
+    </body>
+</html>
