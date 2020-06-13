@@ -1,471 +1,555 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
-  padding: 0 1em;
+    padding: 0 1em;
 }
 
+
 /* #Loader */
+
 #loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  margin: -75px 0 0 -75px;
-  animation-name: opac;
-  animation-duration: 2s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    animation-name: opac;
+    animation-duration: 2s;
 }
 
 @-webkit-keyframes opac {
-  0% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
-  }
-  100% {
-    opacity: 100%;
-  }
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 @keyframes opac {
-  0% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
-  }
-  100% {
-    opacity: 100%;
-  }
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
+
 /* Add animation to "page content" */
+
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0px;
-    opacity: 1;
-  }
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
 }
 
 @keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+    from {
+        bottom: -100px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
 }
 
 #myDiv {
-  display: none;
+    display: none;
 }
 
+
 /*Navbar*/
+
 nav {
-  width: 100%;
-  height: auto;
-  margin-top: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 label img {
-  float: left;
-  width: 3em;
-  height: 3em;
-  margin-left: 1em;
+    float: left;
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
 }
 
 label span {
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  line-height: 1em;
-  padding: 0 0.5em;
-  font-family: "Architects Daughter", cursive;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 1em;
+    padding: 0 0.5em;
+    font-family: "Architects Daughter", cursive;
 }
 
 .bar {
-  display: none;
+    display: none;
 }
 
 .header-menu {
-  float: right;
-  color: white;
-  font-family: "Architects Daughter", cursive;
-  font-size: 15px;
-  padding: 0px 2em;
-  line-height: 3em;
+    float: right;
+    color: white;
+    font-family: "Architects Daughter", cursive;
+    font-size: 15px;
+    padding: 0px 2em;
+    line-height: 3em;
 }
 
 .header-menu ul li {
-  margin-right: 1em;
-  font-weight: bold;
-  display: inline-block;
+    margin-right: 1em;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .header-menu a {
-  color: white;
+    color: white;
 }
 
 .header-menu a:hover,
 .header-menu a:visited {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .sidenav {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0, 0, 0);
-  overflow-y: hidden;
-  transition: 0.5s;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    transition: 0.5s;
+    color: white;
 }
+
 .overlay {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  font-family: "Architects Daughter", cursive;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: "Architects Daughter", cursive;
 }
+
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
+
 .sidenav a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
+
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-size: 3em;
+    margin-left: 50px;
+    color: white;
 }
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+
+@media screen and (max-height: 50px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 1em;
-  right: 2em;
-  z-index: 99;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
-  background: linear-gradient(45deg, purple, pink, lightpink);
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    z-index: 99;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    background: linear-gradient(45deg, purple, pink, lightpink);
 }
+
 
 /*Container-fluid*/
 
-.col-6 .planetPosition {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  display: flex;
-  width: 300px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
+.col-sm-6 .planetPosition {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
 }
+
 .far-orbit {
-  width: 100%;
-  height: 100%;
-  background-color: #4e4a4a5e;
-  border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #4e4a4a5e;
+    border-radius: 50%;
 }
+
 .near-orbit {
-  width: 75%;
-  height: 75%;
-  background-color: #afa5a53b;
-  position: absolute;
-  border-radius: 50%;
+    width: 75%;
+    height: 75%;
+    background-color: #afa5a53b;
+    position: absolute;
+    border-radius: 50%;
 }
+
 .mainPlanet {
-  position: absolute;
-  width: 70%;
-  height: 70%;
-  background-image: url(../img/sun.svg);
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-image: url(../img/sun.svg);
 }
+
 img {
-  width: 15%;
+    width: 15%;
 }
+
 .smallPlanet {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
+
 .fb {
-  animation: spin 20s linear 0s infinite;
+    animation: spin 20s linear 0s infinite;
 }
+
 .insta {
-  animation: spin 20s linear 0s infinite;
+    animation: spin 20s linear 0s infinite;
 }
+
 .lin {
-  animation: spin 20s linear 0s infinite;
+    animation: spin 20s linear 0s infinite;
 }
+
 .you {
-  animation: spin 20s linear 0s infinite;
+    animation: spin 20s linear 0s infinite;
 }
 
 .twit {
-  animation: spin 20s linear 0s infinite;
-}
-.fb img {
-  bottom: -10px;
-  right: 60px;
-  position: absolute;
-}
-.insta img {
-  top: 20px;
-  left: 0px;
-  position: absolute;
-}
-.lin img {
-  bottom: 230px;
-  left: 130px;
-  position: absolute;
-}
-.you img {
-  top: 134px;
-  right: -60px;
-  position: absolute;
-}
-.twit img {
-  bottom: -140px;
-  right: 50px;
-  position: relative;
+    animation: spin 20s linear 0s infinite;
 }
 
-/*Starts Position*/
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fb img {
+    bottom: -10px;
+    right: 60px;
+    position: absolute;
 }
+
+.insta img {
+    top: 20px;
+    left: 0px;
+    position: absolute;
+}
+
+.lin img {
+    bottom: 230px;
+    left: 130px;
+    position: absolute;
+}
+
+.you img {
+    top: 134px;
+    right: -60px;
+    position: absolute;
+}
+
+.twit img {
+    bottom: -140px;
+    right: 50px;
+    position: relative;
+}
+
+
+/*Starts Position*/
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes spin-negative {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 .container-fluid {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
 }
 
-.col-6 h1 {
-  font-size: 4em;
-  text-align: center;
-  justify-content: center;
+.txt1 h1 {
+    font-size: 4em;
+    text-align: center;
+    justify-content: center;
 }
 
-.col-6 h3 {
-  margin: 1em 0em 0em 1em;
-  font-size: 1.5em;
-  text-align: justify;
+.txt1 h3 {
+    margin: 1em 0em 0em 1em;
+    font-size: 1.5em;
+    text-align: justify;
 }
 
 .col a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .col a:hover,
 .col a:link,
 .col a:visited {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .col .link:hover {
-  color: darkgray;
+    color: darkgray;
 }
 
-.col-12 h1 {
-  font-family: "Comic Neue", cursive;
-  text-align: center;
-  color: white;
-  font-size: 50px;
-  margin-top: 1em;
+.head1 h1 {
+    font-family: "Comic Neue", cursive;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 1em;
 }
 
 footer {
-  text-align: center;
-  font-size: 1em;
-  padding-bottom: 1em;
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 1em;
 }
 
 footer span:nth-child(2) {
-  margin-left: 1em;
+    margin-left: 1em;
 }
 
 .left,
 .right {
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-.row .col-4 img {
-  float: right;
-  padding: 1em;
-  width: 60%;
-  height: 100%;
-  border-radius: 50%;
-  filter: grayscale(100%);
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
-.row .col-4 img:hover {
-  filter: grayscale(0);
+.row .col-sm-4 img {
+    float: right;
+    padding: 1em;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
 }
 
-.container-fluid .col-6 .row h1 {
-  padding-top: 1em;
-  text-align: left;
-  font-size: 1.5em;
-}
-.container-fluid .col-6 .row h2 {
-  text-align: left;
-  font-size: 1em;
+.row .col-sm-4 img:hover {
+    filter: grayscale(0);
 }
 
-.container-fluid .col-6 .row .imgLink {
-  width: 1em;
-  height: 1em;
+.container-fluid .col-sm-6 .row h1 {
+    padding-top: 1em;
+    text-align: left;
+    font-size: 1.5em;
 }
 
-.row .col {
-  color: white;
-  padding-left: 3em;
+.container-fluid .col-sm-6 .row h2 {
+    text-align: left;
+    font-size: 1em;
 }
 
-.row .col h1 {
-  font-size: 2em;
-  text-align: left;
+.container-fluid .col-sm-6 .row .imgLink {
+    width: 1em;
+    height: 1em;
 }
 
-.row .col h3 {
-  float: left;
-  font-size: 1em;
-}
-
-.row .col h5 {
-  float: left;
-  font-size: 1em;
-}
-
-.row .col {
-  padding-bottom: 0.5em;
-}
-
-.row .right h1 {
-  text-align: center;
-  margin-right: 2.5em;
-}
-
-/*Social Media*/
-
-ul.abc {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-  margin-right: 1em;
-}
-ul.abc li {
-  position: relative;
-  display: block;
-  top: 0;
-  left: 0;
-  color: #666;
-  font-size: 2em;
-  height: 1em;
-  width: 1em;
-  margin-right: 0.5em;
-  cursor: pointer;
-}
-
-.fb:hover {
-  color: #3b5998;
-}
-.tw:hover {
-  color: #00acee;
-}
-.in:hover {
-  color: #e23670;
-}
-.lin:hover {
-  color: #2a6cbb;
-}
-.you:hover {
-  color: #c4302b;
-}
-
-ul a {
-  color: white;
-}
-ul a:hover {
-  color: gray;
-  text-decoration: none;
-}
-
-ul a:visited {
-  text-decoration: none;
+@media screen and (min-width:318px) and (max-width:370px) {
+    label img {
+        float: left;
+        width: 2em;
+        height: 2em;
+        margin-left: 1em;
+    }
+    label span {
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 0 0.5em;
+        font-family: "Architects Daughter", cursive;
+    }
+    .bar {
+        display: block;
+        color: white;
+        float: right;
+        z-index: 1;
+        font-size: 2em;
+    }
+    .header-menu {
+        display: none;
+    }
+    .txt1 h1 {
+        font-size: 2em;
+        text-align: center;
+        justify-content: center;
+    }
+    .txt1 h3 {
+        margin: 1em 0em 0em 1em;
+        font-size: 1em;
+        text-align: justify;
+    }
+    .col-sm-6 .planetPosition {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fb img {
+        bottom: -10px;
+        right: 60px;
+        position: absolute;
+    }
+    .insta img {
+        top: 20px;
+        left: 0px;
+        position: absolute;
+    }
+    .lin img {
+        bottom: 150px;
+        left: 105px;
+        position: absolute;
+    }
+    .you img {
+        top: 105px;
+        right: 150px;
+        position: absolute;
+    }
+    .twit img {
+        bottom: -70px;
+        right: -160px;
+        position: relative;
+    }
+    /*Starts Position*/
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .head1 h1 {
+        font-family: "Comic Neue", cursive;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .row .col-sm-4 img {
+        float: left;
+        padding: 1em;
+        width: 60%;
+        height: 100%;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        margin-left: 20%;
+    }
+    .row .col-sm-4 img:hover {
+        filter: grayscale(0);
+    }
+    .container-fluid .col-sm-6 .row h1 {
+        padding-top: 1em;
+        text-align: center;
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .container-fluid .col-sm-6 .row h2 {
+        text-align: center;
+        font-size: 1em;
+    }
+    .container-fluid .col-sm-6 .row .imgLink {
+        width: 1.5em;
+        height: 1.5em;
+        margin-left: 45%;
+        margin-bottom: 25px;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 4em;
+        right: 1em;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        background: linear-gradient(45deg, purple, pink, lightpink);
+    }
 }
