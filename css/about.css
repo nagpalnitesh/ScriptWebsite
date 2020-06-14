@@ -455,8 +455,8 @@ footer span:nth-child(2) {
         justify-content: center;
     }
     .txt1 h3 {
-        margin: 1em 0em 0em 1em;
-        font-size: 1em;
+        margin: 1em 0em 0em 0em;
+        font-size: 1.5em;
         text-align: justify;
     }
     .col-sm-6 .planetPosition {
@@ -550,5 +550,12 @@ footer span:nth-child(2) {
         width: 3em;
         height: 3em;
         background: linear-gradient(45deg, purple, pink, lightpink);
+    }
+    @media screen and (width:320px) {
+        .txt1 h3 {
+            margin: 1em 0em 0em 0em;
+            font-size: 1.3em;
+            text-align: justify;
+        }
     }
 }
