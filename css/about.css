@@ -389,13 +389,12 @@ footer span:nth-child(2) {
     margin-left: 1em;
 }
 
-.left,
-.right {
+.left {
     margin-top: 1em;
     margin-bottom: 2em;
 }
 
-.row .col-sm-4 img {
+.row .col-sm-2 img {
     float: right;
     padding: 1em;
     width: 60%;
@@ -404,22 +403,22 @@ footer span:nth-child(2) {
     filter: grayscale(100%);
 }
 
-.row .col-sm-4 img:hover {
+.row .col-sm-2 img:hover {
     filter: grayscale(0);
 }
 
-.container-fluid .col-sm-6 .row h1 {
+.container-fluid .col-sm-4 h1 {
     padding-top: 1em;
     text-align: left;
     font-size: 1.5em;
 }
 
-.container-fluid .col-sm-6 .row h2 {
+.container-fluid .col-sm-4 h2 {
     text-align: left;
     font-size: 1em;
 }
 
-.container-fluid .col-sm-6 .row .imgLink {
+.container-fluid .col-sm-4 .imgLink {
     width: 1em;
     height: 1em;
 }
@@ -510,7 +509,7 @@ footer span:nth-child(2) {
         font-size: 2em;
         margin-top: 1.5em;
     }
-    .row .col-sm-4 img {
+    .row .col-sm-2 img {
         float: left;
         padding: 1em;
         width: 60%;
@@ -519,20 +518,20 @@ footer span:nth-child(2) {
         filter: grayscale(100%);
         margin-left: 20%;
     }
-    .row .col-sm-4 img:hover {
+    .row .col-sm-2 img:hover {
         filter: grayscale(0);
     }
-    .container-fluid .col-sm-6 .row h1 {
+    .container-fluid .col-sm-4 h1 {
         padding-top: 1em;
         text-align: center;
         font-size: 1.5em;
         width: 100%;
     }
-    .container-fluid .col-sm-6 .row h2 {
+    .container-fluid .col-sm-4 h2 {
         text-align: center;
         font-size: 1em;
     }
-    .container-fluid .col-sm-6 .row .imgLink {
+    .container-fluid .col-sm-4 .imgLink {
         width: 1.5em;
         height: 1.5em;
         margin-left: 45%;
@@ -654,7 +653,7 @@ footer span:nth-child(2) {
         font-size: 2em;
         margin-top: 1.5em;
     }
-    .row .col-sm-4 img {
+    .row .col-sm-2 img {
         float: left;
         padding: 1em;
         width: 60%;
@@ -663,20 +662,20 @@ footer span:nth-child(2) {
         filter: grayscale(100%);
         margin-left: 20%;
     }
-    .row .col-sm-4 img:hover {
+    .row .col-sm-2 img:hover {
         filter: grayscale(0);
     }
-    .container-fluid .col-sm-6 .row h1 {
+    .container-fluid .col-sm-4 h1 {
         padding-top: 1em;
         text-align: center;
         font-size: 1.5em;
         width: 100%;
     }
-    .container-fluid .col-sm-6 .row h2 {
+    .container-fluid .col-sm-4 h2 {
         text-align: center;
         font-size: 1em;
     }
-    .container-fluid .col-sm-6 .row .imgLink {
+    .container-fluid .col-sm-4 .imgLink {
         width: 1.5em;
         height: 1.5em;
         margin-left: 45%;
@@ -769,7 +768,7 @@ footer span:nth-child(2) {
         font-size: 2em;
         margin-top: 1.5em;
     }
-    .row .col-sm-4 img {
+    .row .col-sm-2 img {
         padding: 1.5em;
         width: 150%;
         height: 100%;
@@ -777,19 +776,19 @@ footer span:nth-child(2) {
         filter: grayscale(100%);
         margin-right: -30px;
     }
-    .row .col-sm-4 img:hover {
+    .row .col-sm-2 img:hover {
         filter: grayscale(0);
     }
-    .container-fluid .col-sm-6 .row h1 {
+    .container-fluid .col-sm-4 h1 {
         padding-top: 1em;
         text-align: left;
         font-size: 1.2em;
     }
-    .container-fluid .col-sm-6 .row h2 {
+    .container-fluid .col-sm-4 h2 {
         text-align: left;
         font-size: 1em;
     }
-    .container-fluid .col-sm-6 .row .imgLink {
+    .container-fluid .col-sm-4 .imgLink {
         width: 1.5em;
         height: 1.5em;
         margin-bottom: 25px;
@@ -825,7 +824,7 @@ footer span:nth-child(2) {
         color: white;
         margin-top: 1.5em;
     }
-    .row .col-sm-4 img {
+    .row .col-sm-2 img {
         padding: 1em;
         width: 150%;
         height: 100%;
@@ -833,21 +832,21 @@ footer span:nth-child(2) {
         filter: grayscale(100%);
         margin-right: -55px;
     }
-    .row .col-sm-4 img:hover {
+    .row .col-sm-2 img:hover {
         filter: grayscale(0);
     }
-    .container-fluid .col-sm-6 .row h1 {
+    .container-fluid .col-sm-4 h1 {
         padding-top: 1em;
         text-align: left;
         font-size: 1.5em;
         margin-left: 38px;
     }
-    .container-fluid .col-sm-6 .row h2 {
+    .container-fluid .col-sm-4 h2 {
         text-align: left;
         font-size: 1.2em;
         margin-left: 38px;
     }
-    .container-fluid .col-sm-6 .row .imgLink {
+    .container-fluid .col-sm-4 .imgLink {
         width: 1.5em;
         height: 1.5em;
         margin-bottom: 25px;
