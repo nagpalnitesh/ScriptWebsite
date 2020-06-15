@@ -696,3 +696,174 @@ footer span:nth-child(2) {
         background: linear-gradient(45deg, purple, pink, lightpink);
     }
 }
+
+@media screen and (min-width:551px) and (max-width:788px) {
+    .bar {
+        display: block;
+        color: white;
+        float: right;
+        z-index: 1;
+        font-size: 2em;
+        margin-right: 1em;
+    }
+    .header-menu {
+        display: none;
+    }
+    .txt1 h1 {
+        text-align: center;
+        justify-content: center;
+    }
+    .txt1 h3 {
+        margin: 1em 0em 0em 0em;
+        font-size: 1.5em;
+        text-align: justify;
+    }
+    .col-sm-6 .planetPosition {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .fb img {
+        bottom: -10px;
+        right: 60px;
+        position: absolute;
+    }
+    .insta img {
+        top: 20px;
+        left: 0px;
+        position: absolute;
+    }
+    .lin img {
+        bottom: 150px;
+        left: 105px;
+        position: absolute;
+    }
+    .you img {
+        top: 105px;
+        right: 150px;
+        position: absolute;
+    }
+    .twit img {
+        bottom: -70px;
+        right: -160px;
+        position: relative;
+    }
+    /*Starts Position*/
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .head1 h1 {
+        font-family: "Comic Neue", cursive;
+        text-align: center;
+        color: white;
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .row .col-sm-4 img {
+        padding: 1.5em;
+        width: 150%;
+        height: 100%;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        margin-right: -30px;
+    }
+    .row .col-sm-4 img:hover {
+        filter: grayscale(0);
+    }
+    .container-fluid .col-sm-6 .row h1 {
+        padding-top: 1em;
+        text-align: left;
+        font-size: 1.2em;
+    }
+    .container-fluid .col-sm-6 .row h2 {
+        text-align: left;
+        font-size: 1em;
+    }
+    .container-fluid .col-sm-6 .row .imgLink {
+        width: 1.5em;
+        height: 1.5em;
+        margin-bottom: 25px;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 4em;
+        right: 2em;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        background: linear-gradient(45deg, purple, pink, lightpink);
+    }
+}
+
+@media screen and (width:1024px) {
+    .txt1 h1 {
+        text-align: center;
+        justify-content: center;
+    }
+    .txt1 h3 {
+        margin: 1em 0em 0em 0em;
+        font-size: 2em;
+        text-align: justify;
+    }
+    .head1 h1 {
+        font-family: "Comic Neue", cursive;
+        text-align: center;
+        color: white;
+        margin-top: 1.5em;
+    }
+    .row .col-sm-4 img {
+        padding: 1em;
+        width: 150%;
+        height: 100%;
+        border-radius: 50%;
+        filter: grayscale(100%);
+        margin-right: -55px;
+    }
+    .row .col-sm-4 img:hover {
+        filter: grayscale(0);
+    }
+    .container-fluid .col-sm-6 .row h1 {
+        padding-top: 1em;
+        text-align: left;
+        font-size: 1.5em;
+        margin-left: 38px;
+    }
+    .container-fluid .col-sm-6 .row h2 {
+        text-align: left;
+        font-size: 1.2em;
+        margin-left: 38px;
+    }
+    .container-fluid .col-sm-6 .row .imgLink {
+        width: 1.5em;
+        height: 1.5em;
+        margin-bottom: 25px;
+        margin-left: 38px;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 4em;
+        right: 2em;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        background: linear-gradient(45deg, purple, pink, lightpink);
+    }
+}
