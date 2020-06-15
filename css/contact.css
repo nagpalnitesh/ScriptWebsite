@@ -1,16 +1,179 @@
-* {
-  margin: 0;
+*{
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
   text-decoration: none;
   list-style: none;
 }
-
-body {
-  padding: 0 1em;
+nav{
+  width: 100%;
+  height: 50px;
+  background: none;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+label.logo{
+  color: white;
+  font-size: 40px;
+  padding: 0 10px;
+  line-height: 70px;
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive; 
+}
+.sidenav {
+height: 0%;
+width: 100%;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+overflow-y: hidden;
+transition: 0.5s;
+}
+.overlay {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+font-family: 'Architects Daughter', cursive;
+}
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.sidenav a:hover {
+color: #f1f1f1;
+}
+.sidenav .closebtn {
+position: absolute;
+top: 3px;
+right: 40px;
+font-size: 36px;
+margin-left: 50px;
+}
+.bar{
+  display: none;
+}
+.header-menu{
+  float: right;
+  color: white;
+  font-size: 15px;
+  font-family: 'Architects Daughter', cursive; 
+  padding: 0px 40px;
+  line-height: 60px;
+}
+ul li{
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+a:visited, a:link{
+  text-decoration: none;
+  color: white;
+}
+a:hover,a.active{
+  background: none;
+  color: #0082e6;
 }
 
-/* #Loader */
+img.a{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left:40px; 
+  margin-top: 10px;
+  }
+
+  img.b{
+    float:left;
+    width: 32px;
+    height: 32px;
+    }
+
+footer{   
+  position: relative;
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:none;
+  text-align: center;
+}
+  font{
+      font-size: 12px;
+      text-align: center;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+  }
+
+#myBtn:hover {
+  background-color: #555;
+}
+#element {
+  width: 100%;  
+}
+img.d{
+  margin-top:190px;
+  margin-left:40px;
+  margin-right:20px;
+}
+img.c{
+  margin-top:115px;
+  margin-left:40px;
+  margin-right:20px;
+  }
+
+.sec{
+  padding-top:100px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 40px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sec1{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  padding-top:5px;
+}
+
+.sec2{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top:50px;
+}
+
+.sec3{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 100px;
+  font-size: 70px;
+  padding-top:5px;
+}
+
+/* loader */
+/* Center the loader */
 #loader {
   position: absolute;
   left: 50%;
@@ -19,45 +182,24 @@ body {
   width: 100px;
   height: 100px;
   margin: -75px 0 0 -75px;
-  animation-name: opac;
+  animation-name: opa;
   animation-duration: 2s;
 }
 
-
-@-webkit-keyframes opac {
-  0% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
-  }
-  100% {
-    opacity: 100%;
-  }
+@-webkit-keyframes opa {
+  0%   {opacity:0%;}
+  25%  {opacity:25%;}
+  50%  {opacity:50%;}
+  75%  {opacity:75%;}
+  100% {opacity:100%;}
 }
 
-@keyframes opac {
-  0% {
-    opacity: 0%;
-  }
-  25% {
-    opacity: 25%;
-  }
-  50% {
-    opacity: 50%;
-  }
-  75% {
-    opacity: 75%;
-  }
-  100% {
-    opacity: 100%;
-  }
+@keyframes opa{
+  0%   {opacity:0%;}
+  25%  {opacity:25%;}
+  50%  {opacity:50%;}
+  75%  {opacity:75%;}
+  100% {opacity:100%;}
 }
 
 /* Add animation to "page content" */
@@ -66,349 +208,761 @@ body {
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s;
+  animation-duration: 1s
 }
 
 @-webkit-keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0px;
-    opacity: 1;
-  }
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom {
-  from {
-    bottom: -100px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
 
 #myDiv {
   display: none;
 }
 
-/*Navbar*/
-nav {
+
+/*Starts Position*/
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+@keyframes spin-negative {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(-360deg);
+  }
+}
+a.x:hover{
+  color: rgb(199, 194, 194);
+  text-decoration: underline;
+}
+.planetPosition {
+  top:29%;
+  left:60%;
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.far-orbit {
   width: 100%;
-  height: auto;
-  margin-top: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  height: 100%;
+  background-color: #4e4a4a5e;
+  border-radius: 50%;
+}
+.near-orbit {
+  width: 75%;
+  height: 75%;
+  background-color:#afa5a53b;
+  position: absolute;
+  border-radius: 50%;
+}
+.mainPlanet {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background-image: url(../img/sun.svg);
+}
+img {
+  width:15%;
+}
+.smallPlanet {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.fb {
+  animation: spin 20s linear 0s infinite;
+}
+.insta {
+  animation: spin 20s linear 0s infinite;
+}
+.lin {
+  animation: spin 20s linear 0s infinite;
+}
+.you {
+  animation: spin 20s linear 0s infinite;
 }
 
-label img {
+.twit {
+  animation: spin 20s linear 0s infinite;
+}
+.fb img {
+  bottom: -10px;
+  right:60px;
+  position: absolute;
+
+}
+.insta img {
+  top:20px;
+  left:0px;
+  position: absolute;
+
+}
+.lin img {
+  bottom:230px;
+  left:130px;
+  position: absolute;
+
+}
+.you img {
+  top: 134px;
+  right: -60px;
+  position: absolute;
+}
+.twit img {
+  bottom: -140px;
+  right: 50px;
+  position: relative;
+}
+.contact{
+  color: darkkhaki;  
+  width: 100%;
+  height:0px; 
+  text-shadow: 4px 1px darkslateblue; 
+  text-align:center; 
+  font-size: 50px;
+}
+
+/*Bottom Nav*/
+.column {
+  margin-top:50px;
+  margin-bottom:10px;
+  margin-right:10px;
   float: left;
-  width: 3em;
-  height: 3em;
-  margin-left: 1em;
+  width: 20%;
+  height:auto; 
+  font-family: 'Comic Neue', cursive;
+  font-weight:bold;
+  /* Should be removed. Only for demonstration */
 }
 
-label span {
-  color: white;
-  font-weight: bold;
-  font-size: 3em;
-  line-height: 1em;
-  padding: 0 0.5em;
-  font-family: "Architects Daughter", cursive;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.bar {
-  display: none;
+.row{
+  text-align:left;
+  color:whitesmoke;
+  bottom: 50px;
 }
 
-.header-menu {
-  float: right;
-  color: white;
-  font-family: "Architects Daughter", cursive;
-  font-size: 15px;
-  padding: 0px 2em;
-  line-height: 3em;
+h2{
+  margin-left:70px;
 }
+/*Social Media*/
 
-.header-menu ul li {
-  margin-right: 1em;
-  font-weight: bold;
-  display: inline-block;
+ul.abc{
+  display: flex !important;
+  margin-top:10px;
 }
-
-.header-menu a {
-  color: white;
+ul.abc li{
+  position: relative;
+  display: block;
+  top: 0;
+  right: 0;
+  color: #666;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin: 0 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
 }
-
-.header-menu a:hover,
-.header-menu a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.sidenav {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
+ul.abc li:before{
+  position: absolute;
+  content: '';
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  overflow-y: hidden;
-  transition: 0.5s;
+  height: inherit;
+  width: inherit;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
 }
-.overlay {
+ul.abc li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+}
+.fb:hover{
+  color: #3B5998;
+}
+.tw:hover{
+  color: #00acee;
+}
+.in:hover{
+  color: #e23670;
+}
+.lin:hover{
+  color: #2a6cbb;
+}
+
+img.btm1{
+  float:left; 
+  width: 30px; 
+  height: 30px;
+  margin-top: 55px; 
+  margin-right: 20px; 
+  margin-left: 20px;
+}
+
+img.btm2{
+ float:left; 
+ width: 30px; 
+ height: 30px; 
+ margin-top: 45px; 
+ margin-right: 20px; 
+ margin-left: 20px;
+}
+#h21{
+ text-align: left !important;
+ margin-left:0px; 
+ margin-top: 10px !important; 
+ margin-bottom: 10px !important;
+}
+
+/*350*/
+
+@media screen and (min-width:318px) and (max-width:550px) {
+label.logo{
+  color: white;
+  font-size: 30px;
+  padding: 0 10px;
+  line-height: 70px;
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive; 
+}
+.sidenav .closebtn {
+position: absolute;
+top: 20px;
+right: 40px;
+font-size: 36px;
+margin-left: 50px;
+}
+.bar{
+  display: block;
+padding: 5px 30px;
+font-size:25px;
+line-height: 60px;
+float:right;
+cursor:pointer; 
+margin-right: 10px; 
+color: white;
+}
+.header-menu{
+  display: none;
+}
+img.a{
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left:20px; 
+  margin-top: 10px;
+  }
+
+#element {
+  width: 100%;  
+  margin-bottom:250px;
+}
+img.d{
+  margin-top:130px;
+  margin-left:20px;
+  margin-right:20px;
+}
+img.c{
+  margin-top:115px;
+  margin-left:20px;
+  margin-right:20px;
+  }
+
+.sec{
+  padding-top:50px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.sec1{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 50px;
+  font-size: 15px;
+  padding-top:5px;
+}
+
+.sec2{
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-left: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top:50px;
+}
+.planetPosition {
+  top:36%;
+  left:20%;
+  position: absolute;
+  display: flex;
+  width: 200px;
+  height:200px;
+  justify-content: center;
+  align-items: center;
+}
+.fb img {
+  bottom: -15px;
+  right:60px;
+  position: absolute;
+
+}
+.insta img {
+  top:15px;
+  left:0px;
+  position: absolute;
+
+}
+.lin img {
+  bottom:130px;
+  left:130px;
+  position: absolute;
+
+}
+.you img {
+  top: 95px;
+  right: -35px;
+  position: absolute;
+}
+.twit img {
+  bottom: -90px;
+  right: 35px;
   position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  font-family: "Architects Daughter", cursive;
 }
-.sidenav a {
+.contact{
+  color: darkkhaki;
+  margin-top:20px;  
+  width: 100%;
+  height:0px; 
+  text-shadow: 4px 1px darkslateblue; 
+  text-align:center; 
+  font-size: 40px;
+}
+/*Bottom Nav*/
+.column {
+  margin-top:50px;
+  margin-bottom:10px;
+  margin-left:45px;
+  float: left;
+  width: 75%;
+  height:auto; 
+  font-family: 'Comic Neue', cursive;
+  font-weight:bold;
+  /* Should be removed. Only for demonstration */
+}
+/*Social Media*/
+
+img.btm1{
+  float:left; 
+  width: 30px; 
+  height: 30px;
+  margin-top: 55px; 
+  margin-right: 20px; 
+  margin-left: 0px;
+}
+
+img.btm2{
+ float:left; 
+ width: 30px; 
+ height: 30px; 
+ margin-top: 45px; 
+ margin-right: 20px; 
+ margin-left: 0px;
+}
+#h21{
+ text-align: left !important;
+ margin-left:0px; 
+ margin-top: 0px !important; 
+ margin-bottom: 10px !important;
+}
+}
+
+/*550*/
+
+@media screen and (min-width:551px) and (max-width:824px) {
+  label.logo{
+    color: white;
+    font-size: 40px;
+    padding: 0 10px;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
+  }
+  .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 40px;
   color: #818181;
   display: block;
   transition: 0.3s;
-}
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-.sidenav .closebtn {
+  }
+  .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 40px;
+  right: 50px;
+  font-size: 76px;
   margin-left: 50px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
+  }
+  .bar{
+    display: block;
+  padding: 5px 30px;
+  font-size:50px;
+  line-height: 60px;
+  float:right;
+  cursor:pointer; 
+  margin-right: 20px; 
+  color: white;
+  }
+  .header-menu{
+    display: none;
+  }
+    img.a{
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left:50px; 
+    margin-top: 10px;
+    }
+  
+    #element {
+    width: 100%;  
+    margin-bottom:150px;
+  }
+  img.d{
+    margin-top:165px;
+    margin-left:50px;
+    margin-right:20px;
+  }
+  img.c{
+    margin-top:125px;
+    margin-left:50px;
+    margin-right:20px;
+    }
+  
+  .sec{
+    padding-top:50px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .sec1{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+    padding-top:5px;
+  }
+  
+  .sec2{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top:50px;
+  }
+  
+  .planetPosition {
+    top:20%;
+    left:62%;
+    position: absolute;
+    display: flex;
+    width: 250px;
+    height:250px;
+    justify-content: center;
+    align-items: center;
+  }
+    .fb img {
+    bottom: -15px;
+    right:60px;
+    position: absolute;
+  
+  }
+  .insta img {
+    top:15px;
+    left:0px;
+    position: absolute;
+  
+  }
+  .lin img {
+    bottom:130px;
+    left:130px;
+    position: absolute;
+  
+  }
+  .you img {
+    top: 95px;
+    right: -35px;
+    position: absolute;
+  }
+  .twit img {
+    bottom: -90px;
+    right: 35px;
+    position: relative;
+  }
+  .contact{
+    color: darkkhaki;
+    margin-top:10px;  
+    width: 100%;
+    height:0px; 
+    text-shadow: 4px 1px darkslateblue; 
+    text-align:center; 
+    font-size: 60px;
+  }
+    /*Bottom Nav*/
+  .column {
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:50px;
+    float: left;
+    width: 40%;
+    height:auto; 
+    font-family: 'Comic Neue', cursive;
+    font-weight:bold;
+    /* Should be removed. Only for demonstration */
+  }
+    img.btm1{
+    float:left; 
+    width: 30px; 
+    height: 30px;
+    margin-top: 55px; 
+    margin-right: 20px; 
+    margin-left: 0px;
+  }
+  
+  img.btm2{
+   float:left; 
+   width: 30px; 
+   height: 30px; 
+   margin-top: 40px; 
+   margin-right: 20px; 
+   margin-left: 0px;
+  }
+  #h21{
+   text-align: left !important;
+   margin-left:0px; 
+   margin-top: 0px !important; 
+   margin-bottom: 10px !important;
+  }
+  }
+
+/*1024*/
+
+@media screen and (min-width:825px) and (max-width:1024px) {
+  label.logo{
+    color: white;
+    font-size: 80px;
+    padding: 0 10px;
+    line-height: 90px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive; 
   }
   .sidenav a {
-    font-size: 18px;
-  }
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 1em;
-  right: 2em;
-  z-index: 99;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
-  background: linear-gradient(45deg, purple, pink, lightpink);
-}
-
-.container-fluid {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  color: white;
-}
-
-.col-6 h1 {
-  font-size: 4em;
-  text-align: center;
-  justify-content: center;
-}
-
-.col-6 h3 {
-  margin: 1em 0em 0em 1em;
-  font-size: 1.5em;
-  text-align: justify;
-}
-
-.col a {
-  color: white;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-}
-
-.col a:hover,
-.col a:link,
-.col a:visited {
-  text-decoration: none;
-}
-
-.col .link:hover {
-  color: darkgray;
-}
-
-.col-12 h1 {
-  font-family: "Comic Neue", cursive;
-  text-align: center;
+  font-size: 60px;
   color: white;
-  font-size: 50px;
-  margin-top: 1em;
-}
-
-footer {
-  text-align: center;
-  font-size: 1em;
-  padding-bottom: 1em;
-}
-
-footer span:nth-child(2) {
-  margin-left: 1em;
-}
-
-.left,
-.right {
-  margin-left: 1em;
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-.row .col-4 img {
-  float: right;
-  padding: 1em;
-  width: 60%;
-  height: 100%;
-  border-radius: 50%;
-  filter: grayscale(100%);
-}
-
-.row .col-4 img:hover {
-  filter: grayscale(0);
-}
-
-.container-fluid .col-6 .row h1 {
-  padding-top: 1em;
-  text-align: left;
-  font-size: 1.5em;
-}
-.container-fluid .col-6 .row h2 {
-  text-align: left;
-  font-size: 1em;
-}
-
-.container-fluid .col-6 .row .imgLink {
-  width: 1em;
-  height: 1em;
-}
-
-.row .col {
-  color: white;
-  padding-left: 3em;
-}
-
-.row .col h1 {
-  font-size: 2em;
-  text-align: left;
-}
-
-.row .col h3 {
-  float: left;
-  font-size: 1em;
-}
-
-.row .col h5 {
-  float: left;
-  font-size: 1em;
-}
-
-.row .col {
-  padding-bottom: 0.5em;
-}
-
-.row .right h1 {
-  text-align: center;
-  margin-right: 2.5em;
-}
-
-/*Social Media*/
-
-ul.abc {
-  display: flex;
-  justify-content: center;
-  margin-top: 1em;
-  margin-right: 1em;
-}
-ul.abc li {
-  position: relative;
   display: block;
-  top: 0;
-  left: 0;
-  color: #666;
-  font-size: 2em;
-  height: 1em;
-  width: 1em;
-  margin-right: 0.5em;
-  cursor: pointer;
-}
-
-.fb:hover {
-  color: #3b5998;
-}
-.tw:hover {
-  color: #00acee;
-}
-.in:hover {
-  color: #e23670;
-}
-.lin:hover {
-  color: #2a6cbb;
-}
-.you:hover {
-  color: #c4302b;
-}
-
-ul a {
+  transition: 0.3s;
+  }
+  .sidenav .closebtn {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  font-size: 100px;
+  margin-left: 50px;
+  }
+  .bar{
+    display: block;
+  padding: 5px 30px;
+  font-size:60px;
+  line-height: 90px;
+  float:right;
+  cursor:pointer; 
+  margin-right: 30px; 
   color: white;
-}
-ul a:hover {
-  color: gray;
-  text-decoration: none;
-}
-
-ul a:visited {
-  text-decoration: none;
-}
-
-.contact .col-6 h1{
-  font-size: 3em;
-  text-align: left;
-  margin-left: 1em;
-  margin-top: 1em;
-}
-
-.contact .col-6 h3{
-  text-align: justify;
-  font-size: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-.contact .col-6 a{
-  color: white;
-  text-decoration: none;
-}
-
-.contact .col-6 a:visited,
-.contact .col-6 a:hover,
-.contact .col-6 a:link{
-  text-decoration: none;
-}
-
-.contact .col-6 a:hover{
-  color: gray;
-}
-
-.contact .col-6 img{
-  margin-left: 5em;
-}
-
-.contact .col-12 h1{
-  text-align: left;
-  margin-left: 1em;
-}
-
+  }
+  .header-menu{
+    display: none;
+  }
+    img.a{
+    float: left;
+    width: 70px;
+    height: 70px;
+    margin-left:60px; 
+    margin-top: 10px;
+    }
+  
+    #element {
+    width: 100%;  
+    margin-bottom:50px;
+  }
+    img.b{
+    float:left;
+    width: 60px;
+    height: 60px;
+    }
+  img.d{
+    margin-top:155px;
+    margin-left:70px;
+    margin-right:40px;
+  }
+  img.c{
+    margin-top:115px;
+    margin-left:70px;
+    margin-right:50px;
+    }
+  
+  .sec{
+    padding-top:50px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 40px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  
+  .sec1{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 50px;
+    font-size: 25px;
+    padding-top:5px;
+  }
+  
+  .sec2{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top:50px;
+  }
+  
+  .planetPosition {
+    top:20%;
+    left:62%;
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+  }
+    .fb img {
+    bottom: -15px;
+    right:60px;
+    position: absolute;
+  
+  }
+  .insta img {
+    top:15px;
+    left:0px;
+    position: absolute;
+  
+  }
+  .lin img {
+    bottom:235px;
+    left:130px;
+    position: absolute;
+  
+  }
+  .you img {
+    top: 95px;
+    right: -55px;
+    position: absolute;
+  }
+  .twit img {
+    bottom: -150px;
+    right: 50px;
+    position: relative;
+  }
+  .contact{
+    color: darkkhaki;
+    margin-top:10px;
+    margin-bottom:40px;  
+    width: 100%;
+    height:0px; 
+    text-shadow: 4px 1px darkslateblue; 
+    text-align:center; 
+    font-size: 60px;
+  }
+    /*Bottom Nav*/
+  .column {
+    margin-top:115px;
+    margin-bottom:10px;
+    margin-left:50px;
+    float: left;
+    width: 40%;
+    height:auto; 
+    font-size:30px;
+    font-family: 'Comic Neue', cursive;
+    font-weight:bold;
+    /* Should be removed. Only for demonstration */
+  }
+    img.btm1{
+    float:left; 
+    width: 50px; 
+    height: 50px;
+    margin-top: 85px; 
+    margin-right: 20px; 
+    margin-left: 0px;
+  }
+  
+  img.btm2{
+   float:left; 
+   width: 50px; 
+   height: 50px; 
+   margin-top: 70px; 
+   margin-right: 20px; 
+   margin-left: 0px;
+  }
+  #h21{
+   text-align: left !important;
+   margin-left:0px; 
+   margin-top: 0px !important; 
+   margin-bottom: 10px !important;
+  }
+  #myBtn {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  }
+  *:not(.fab) {
+    font-family: Arial !important;
+    font-weight: 400 !important;
+  }
+  #myBtn {
+    width: 50px !important;
+    height: 50px !important;
+  }
