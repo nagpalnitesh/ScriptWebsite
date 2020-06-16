@@ -1,91 +1,106 @@
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
 }
-nav{
-  width: 100%;
-  height: 50px;
-  background: none;
-  padding-top:30px;
-  padding-bottom:30px;
+
+nav {
+    width: 100%;
+    height: 50px;
+    background: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-label.logo{
-  color: white;
-  font-size: 40px;
-  padding: 0 10px;
-  line-height: 70px;
-  font-weight: bold;
-    font-family: 'Architects Daughter', cursive; 
+
+label.logo {
+    color: white;
+    font-size: 40px;
+    padding: 0 10px;
+    line-height: 70px;
+    font-weight: bold;
+    font-family: 'Architects Daughter', cursive;
 }
+
 .sidenav {
-height: 0%;
-width: 100%;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-background-color: rgb(0,0,0);
-overflow-y: hidden;
-transition: 0.5s;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    overflow-y: hidden;
+    transition: 0.5s;
 }
+
 .overlay {
-position: relative;
-top: 25%;
-width: 100%;
-text-align: center;
-margin-top: 30px;
-font-family: 'Architects Daughter', cursive;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Architects Daughter', cursive;
 }
+
 .sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #818181;
-display: block;
-transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
+
 .sidenav a:hover {
-color: #f1f1f1;
+    color: #f1f1f1;
 }
+
 .sidenav .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
-.bar{
-  display: none;
+
+.bar {
+    display: none;
 }
-.header-menu{
-  float: right;
-  color: white;
-  font-size: 15px;
-  font-family: 'Architects Daughter', cursive; 
-  padding: 0px 40px;
-  line-height: 60px;
+
+.header-menu {
+    float: right;
+    color: white;
+    font-size: 15px;
+    padding: 0px 2em;
+    line-height: 3em;
 }
-ul li{
-  margin-right: 10px;
-  font-weight: bold;
-  display: inline-block;
+
+.header-menu ul li {
+    margin-right: 1em;
+    font-weight: bold;
+    display: inline-block;
 }
-a:visited, a:link{
-  text-decoration: none;
-  color: white;
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: white;
 }
-a:hover,a.active{
-  background: none;
-  color: #0082e6;
+
+a:hover,
+a.active {
+    background: none;
+    color: #0082e6;
 }
-img.a{
-  float: left;
-  width: 40px;
-  height: 40px;
-  }
-footer{   
+
+img.a {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
     position: relative;
     height: 40px;
     left: 0;
@@ -94,18 +109,21 @@ footer{
     background-color: transparent;
     text-align: center;
 }
-    font{
-        font-size: 12px;
-        text-align: center;
-    }
-.sec{
+
+font {
+    font-size: 12px;
+    text-align: center;
+}
+
+.sec {
     text-align: center;
     font-size: 90px;
-    padding-top:100px;
+    padding-top: 100px;
 }
-.sec1{
+
+.sec1 {
     margin-left: 100px;
-    text-align:justify;
+    text-align: justify;
     font-size: 60px;
     font-family: 'Architects Daughter', cursive;
     font-weight: lighter;
@@ -121,19 +139,24 @@ footer{
     cursor: pointer;
     border: none;
     border-radius: 50%;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
+}
 
-  .section{
-      width: 100%;
-      height: 100vh;
-      background-color: transparent;
-  }
+#myBtn:hover {
+    background-color: #555;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+
 /* loader */
+
+
 /* Center the loader */
+
 #loader {
     position: absolute;
     left: 50%;
@@ -144,1013 +167,1113 @@ footer{
     margin: -75px 0 0 -75px;
     animation-name: spin;
     animation-duration: 2s;
+}
 
-  }
-  
-  @-webkit-keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  @keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
+@-webkit-keyframes spin {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 25%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    75% {
+        opacity: 75%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+/* Add animation to "page content" */
+
+.animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
     display: none;
-  }
+}
 
 
-  /*Bottom Nav*/
-  .column {
-    margin-top:50px;
-    margin-bottom:10px;
-    margin-left:50px;
-    margin-right:10px;
+/*Bottom Nav*/
+
+.column {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 10px;
     float: left;
     width: 20%;
-    height:auto; 
+    height: auto;
     font-family: 'Comic Neue', cursive;
-    font-weight:bold;
+    font-weight: bold;
     /* Should be removed. Only for demonstration */
-  }
+}
+
 
 /* Clear floats after the columns */
+
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.row{
-  text-align:left;
-  color:whitesmoke;
-  bottom: 50px;
+.row {
+    text-align: left;
+    color: whitesmoke;
+    bottom: 50px;
 }
 
-h2{
-  margin-left:70px;
+h2 {
+    margin-left: 70px;
 }
+
+
 /*Social Media*/
 
-ul.abc{
-  display: flex;
-  margin-top:10px;
-}
-ul.abc li{
-  position: relative;
-  display: block;
-  top: 0;
-  right: 0;
-  color: #666;
-  font-size: 30px;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  margin: 0 10px;
-  padding: 10px;
-  cursor: pointer;
-  transition: .5s;
-}
-ul.abc li:before{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: inherit;
-  width: inherit;
-  transform: scale(.9);
-  z-index: -1;
-  transition: .5s;
-}
-ul.abc li:hover:before{
-  filter: blur(3px);
-  transform: scale(1.2);
-}
-.fb:hover{
-  color: #3B5998;
-}
-.tw:hover{
-  color: #00acee;
-}
-.in:hover{
-  color: #e23670;
-}
-.lin:hover{
-  color: #2a6cbb;
+ul.abc {
+    display: flex;
+    margin-top: 10px;
 }
 
-img.btm1{
-  float:left; 
-  width: 30px; 
-  height: 30px;
-  margin-top: 55px; 
-  margin-right: 20px; 
-  margin-left: 20px;
+ul.abc li {
+    position: relative;
+    display: block;
+    top: 0;
+    right: 0;
+    color: #666;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
 }
 
-img.btm2{
- float:left; 
- width: 30px; 
- height: 30px; 
- margin-top: 45px; 
- margin-right: 20px; 
- margin-left: 20px;
-}
-#h21{
- text-align: left !important;
- margin-left:0px; 
- margin-top: 10px !important; 
- margin-bottom: 10px !important;
+ul.abc li:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
 }
 
-img.blog{
-  float: right;
-  margin-top: 100px; 
-  margin-left: 100px; 
-  margin-right: 150px; 
-  width: 300px; 
-  height: 300px; 
-  border-radius: 50%; 
-  box-shadow: 0px 0px 20px 5px black; 
-  border: 0px;
+ul.abc li:hover:before {
+    filter: blur(3px);
+    transform: scale(1.2);
 }
+
+.fb:hover {
+    color: #3B5998;
+}
+
+.tw:hover {
+    color: #00acee;
+}
+
+.in:hover {
+    color: #e23670;
+}
+
+.lin:hover {
+    color: #2a6cbb;
+}
+
+img.btm1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 55px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+img.btm2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#h21 {
+    text-align: left !important;
+    margin-left: 0px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+img.blog {
+    float: right;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px black;
+    border: 0px;
+}
+
 
 /*350*/
-@media screen and (min-width:318px) and (max-width:370px){
-  .sidenav a {
-    padding: 8px 8px 8px 8px !important;
-  }
-label.logo{
-  color: white;
-  font-size: 30px;
-  padding: 0 10px;
-  line-height: 70px;
-  font-weight: bold;
-  font-family: 'Architects Daughter', cursive; 
+
+@media screen and (min-width:318px) and (max-width:370px) {
+    .sidenav a {
+        padding: 8px 8px 8px 8px !important;
+    }
+    label.logo {
+        color: white;
+        font-size: 30px;
+        padding: 0 10px;
+        line-height: 70px;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .bar {
+        display: block;
+        padding: 5px 50px;
+        line-height: 70px;
+        float: right;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 65px;
+        font-size: 86px;
+        margin-left: 50px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    img.a {
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .sec {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 50px;
+        text-shadow: 4px 4px black;
+    }
+    .sec1 {
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: lighter;
+        color: white;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+    }
+    #myBtn:hover {
+        background-color: #555;
+    }
+    .section {
+        width: 100%;
+        height: 100vh;
+        background-color: transparent;
+    }
+    /* loader */
+    /* Center the loader */
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -75px 0 0 -75px;
+        animation-name: spin;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    #myDiv {
+        display: none;
+    }
+    /*Bottom Nav*/
+    .column {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 10px;
+        float: left;
+        width: 70%;
+        height: auto;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
+        /* Should be removed. Only for demonstration */
+    }
+    img.btm1 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    img.btm2 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 45px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #h21 {
+        text-align: left !important;
+        margin-left: 0px;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    img.blog {
+        position: absolute;
+        float: left;
+        top: 23%;
+        left: -40px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 5px black;
+        border: 0px;
+    }
 }
 
-  .bar{
-  display: block;
-  padding: 5px 50px;
-  line-height:70px;
-  float:right;
-  font-size:60px;
-  cursor:pointer;  
-  color: white;
-  }
-  .header-menu{
-      display: none;
-  }
-
-.sidenav .closebtn {
-position: absolute;
-top: 50px;
-right: 65px;
-font-size: 86px;
-margin-left: 50px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 55px;
-color: white;
-display: block;
-transition: 0.3s;
-}
-
-img.a{
-  float: left;
-  width: 40px;
-  height: 40px;
-  }
-.sec{
-    text-align: center;
-    font-size: 90px;
-    padding-top:50px;
-    text-shadow:4px 4px black;
-}
-
-.sec1{
-    font-size: 50px;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: lighter;
-    color: white;
-}
-
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 0px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-
-  .section{
-      width: 100%;
-      height: 100vh;
-      background-color: transparent;
-  }
-/* loader */
-/* Center the loader */
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    animation-name: spin;
-    animation-duration: 2s;
-
-  }
-  
-  @-webkit-keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  @keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-  }
-
-
-  /*Bottom Nav*/
-  .column {
-    margin-top:50px;
-    margin-bottom:10px;
-    margin-left:40px;
-    margin-right:10px;
-    float: left;
-    width: 70%;
-    height:auto; 
-    font-family: 'Comic Neue', cursive;
-    font-weight:bold;
-    /* Should be removed. Only for demonstration */
-  }
-
-img.btm1{
-  float:left; 
-  width: 30px; 
-  height: 30px;
-  margin-top: 55px; 
-  margin-right: 20px; 
-  margin-left: 20px;
-}
-
-img.btm2{
- float:left; 
- width: 30px; 
- height: 30px; 
- margin-top: 45px; 
- margin-right: 20px; 
- margin-left: 20px;
-}
-#h21{
- text-align: left !important;
- margin-left:0px; 
- margin-top: 10px !important; 
- margin-bottom: 10px !important;
-}
-
-img.blog{
-  position:absolute;
-  float: left;
-  top:23%;
-  left:-40px;  
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
-  box-shadow: 0px 0px 20px 5px black; 
-  border: 0px;
-}
-}
 @media (max-width: 767px) {
-  nav{
-    width: 100%;
-    height: 50px;
-    background: none;
-    padding-top: 20px;
-    padding-bottom: 0px;
-  } 
-  label.logo {
-    color: white;
-    font-size: 35px;
-    padding: 0 15px;
-    line-height: 70px;
-    font-weight: bold;
-    font-family: 'Architects Daughter', cursive;
-}
-  .sidenav a {
-    padding-top:10px;
-    font-size: 30px;}
-  .sidenav .closebtn {right:10px; 
-  font-size: 50px;}
-  .bar{
-  display: block;
-  padding: 5px 30px;
-  font-size:70px;
-  line-height: 60px;
-  float:right;
-  cursor:pointer; 
-  margin-right: 10px; 
-  color: white;
-  }
-  .header-menu{
-    display: none;
-  }
-  img.a {
-    margin-left: 20px !important;
-    margin-top: 15px;
-    margin-right: 10px;
+    nav {
+        width: 100%;
+        height: 50px;
+        background: none;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    label.logo {
+        color: white;
+        font-size: 35px;
+        padding: 0 15px;
+        line-height: 70px;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .sidenav a {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    .sidenav .closebtn {
+        right: 10px;
+        font-size: 50px;
+    }
+    .bar {
+        display: block;
+        padding: 5px 30px;
+        font-size: 70px;
+        line-height: 60px;
+        float: right;
+        cursor: pointer;
+        margin-right: 10px;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    img.a {
+        margin-left: 20px !important;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
 }
 
-}
 
 /*450*/
-@media screen and (min-width:371px) and (max-width:550px){
-  .sidenav a {
-    padding: 8px 8px 8px 8px !important;
-  }
-label.logo{
-  color: white;
-  font-size: 30px;
-  padding: 0 10px;
-  line-height: 70px;
-  font-weight: bold;
-  font-family: 'Architects Daughter', cursive; 
+
+@media screen and (min-width:371px) and (max-width:550px) {
+    .sidenav a {
+        padding: 8px 8px 8px 8px !important;
+    }
+    label.logo {
+        color: white;
+        font-size: 30px;
+        padding: 0 10px;
+        line-height: 70px;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .bar {
+        display: block;
+        padding: 5px 50px;
+        line-height: 70px;
+        float: right;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 65px;
+        font-size: 86px;
+        margin-left: 50px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    img.a {
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .sec {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 50px;
+        text-shadow: 4px 4px black;
+    }
+    .sec1 {
+        margin-left: 50px;
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: lighter;
+        color: white;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+    }
+    .section {
+        width: 100%;
+        height: 70vh;
+        background-color: transparent;
+    }
+    /* loader */
+    /* Center the loader */
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -75px 0 0 -75px;
+        animation-name: spin;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    #myDiv {
+        display: none;
+    }
+    /*Bottom Nav*/
+    .column {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 10px;
+        float: left;
+        width: 70%;
+        height: auto;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
+        /* Should be removed. Only for demonstration */
+    }
+    img.btm1 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    img.btm2 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 45px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #h21 {
+        text-align: left !important;
+        margin-left: 0px;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    img.blog {
+        position: absolute;
+        float: left;
+        top: 23%;
+        left: -5px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 5px black;
+        border: 0px;
+    }
 }
 
-
-  .bar{
-  display: block;
-  padding: 5px 50px;
-  line-height:70px;
-  float:right;
-  font-size:60px;
-  cursor:pointer;  
-  color: white;
-  }
-  .header-menu{
-      display: none;
-  }
-
-.sidenav .closebtn {
-position: absolute;
-top: 50px;
-right: 65px;
-font-size: 86px;
-margin-left: 50px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 55px;
-color: white;
-display: block;
-transition: 0.3s;
-}
-
-img.a{
-  float: left;
-  width: 40px;
-  height: 40px;
-  }
-.sec{
-    text-align: center;
-    font-size: 90px;
-    padding-top:50px;
-    text-shadow:4px 4px black;
-}
-
-.sec1{
-    margin-left:50px;
-    font-size: 50px;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: lighter;
-    color: white;
-}
-
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-  }
-  .section{
-      width: 100%;
-      height: 70vh;
-      background-color: transparent;
-  }
-/* loader */
-/* Center the loader */
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    animation-name: spin;
-    animation-duration: 2s;
-
-  }
-  
-  @-webkit-keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  @keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-  }
-
-
-  /*Bottom Nav*/
-  .column {
-    margin-top:0px;
-    margin-bottom:10px;
-    margin-left:40px;
-    margin-right:10px;
-    float: left;
-    width: 70%;
-    height:auto; 
-    font-family: 'Comic Neue', cursive;
-    font-weight:bold;
-    /* Should be removed. Only for demonstration */
-  }
-
-img.btm1{
-  float:left; 
-  width: 30px; 
-  height: 30px;
-  margin-top: 55px; 
-  margin-right: 20px; 
-  margin-left: 20px;
-}
-
-img.btm2{
- float:left; 
- width: 30px; 
- height: 30px; 
- margin-top: 45px; 
- margin-right: 20px; 
- margin-left: 20px;
-}
-#h21{
- text-align: left !important;
- margin-left:0px; 
- margin-top: 10px !important; 
- margin-bottom: 10px !important;
-}
-
-img.blog{
-  position:absolute;
-  float: left;
-  top:23%;
-  left:-5px;  
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
-  box-shadow: 0px 0px 20px 5px black; 
-  border: 0px;
-}
-}
 
 /*788*/
-@media screen and (min-width:551px) and (max-width:788px){
-label.logo{
-  color: white;
-  font-size: 60px;
-  padding: 0 10px;
-  line-height: 70px;
-  font-weight: bold;
-  font-family: 'Architects Daughter', cursive; 
+
+@media screen and (min-width:551px) and (max-width:788px) {
+    label.logo {
+        color: white;
+        font-size: 60px;
+        padding: 0 10px;
+        line-height: 70px;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .bar {
+        display: block;
+        padding: 5px 50px;
+        line-height: 70px;
+        float: right;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 65px;
+        font-size: 86px;
+        margin-left: 50px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    img.a {
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .sec {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 50px;
+        text-shadow: 4px 4px black;
+    }
+    .sec1 {
+        margin-left: 50px;
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: lighter;
+        color: white;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+    }
+    .section {
+        width: 100%;
+        height: 70vh;
+        background-color: transparent;
+    }
+    /* loader */
+    /* Center the loader */
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -75px 0 0 -75px;
+        animation-name: spin;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    #myDiv {
+        display: none;
+    }
+    /*Bottom Nav*/
+    .column {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 10px;
+        float: left;
+        width: 40%;
+        height: auto;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
+        /* Should be removed. Only for demonstration */
+    }
+    img.btm1 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    img.btm2 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 45px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #h21 {
+        text-align: left !important;
+        margin-left: 0px;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    img.blog {
+        position: absolute;
+        float: left;
+        top: 23%;
+        left: 100px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 5px black;
+        border: 0px;
+    }
 }
 
-  .bar{
-  display: block;
-  padding: 5px 50px;
-  line-height:70px;
-  float:right;
-  font-size:60px;
-  cursor:pointer;  
-  color: white;
-  }
-  .header-menu{
-      display: none;
-  }
-
-.sidenav .closebtn {
-position: absolute;
-top: 50px;
-right: 65px;
-font-size: 86px;
-margin-left: 50px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 55px;
-color: white;
-display: block;
-transition: 0.3s;
-}
-
-img.a{
-  float: left;
-  width: 40px;
-  height: 40px;
-  }
-.sec{
-    text-align: center;
-    font-size: 90px;
-    padding-top:50px;
-    text-shadow:4px 4px black;
-}
-
-.sec1{
-    margin-left:50px;
-    font-size: 50px;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: lighter;
-    color: white;
-}
-
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-  }
-  .section{
-      width: 100%;
-      height: 70vh;
-      background-color: transparent;
-  }
-/* loader */
-/* Center the loader */
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    animation-name: spin;
-    animation-duration: 2s;
-
-  }
-  
-  @-webkit-keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  @keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-  }
-
-
-  /*Bottom Nav*/
-  .column {
-    margin-top:0px;
-    margin-bottom:10px;
-    margin-left:40px;
-    margin-right:10px;
-    float: left;
-    width: 40%;
-    height:auto; 
-    font-family: 'Comic Neue', cursive;
-    font-weight:bold;
-    /* Should be removed. Only for demonstration */
-  }
-
-img.btm1{
-  float:left; 
-  width: 30px; 
-  height: 30px;
-  margin-top: 55px; 
-  margin-right: 20px; 
-  margin-left: 20px;
-}
-
-img.btm2{
- float:left; 
- width: 30px; 
- height: 30px; 
- margin-top: 45px; 
- margin-right: 20px; 
- margin-left: 20px;
-}
-#h21{
- text-align: left !important;
- margin-left:0px; 
- margin-top: 10px !important; 
- margin-bottom: 10px !important;
-}
-
-img.blog{
-  position:absolute;
-  float: left;
-  top:23%;
-  left:100px;  
-  width: 350px; 
-  height: 350px; 
-  border-radius: 50%; 
-  box-shadow: 0px 0px 20px 5px black; 
-  border: 0px;
-}
-}
 
 /*1024*/
-@media screen and (min-width:789px) and (max-width:1024px){
-label.logo{
-  color: white;
-  font-size: 60px;
-  padding: 0 10px;
-  line-height: 70px;
-  font-weight: bold;
-  font-family: 'Architects Daughter', cursive; 
+
+@media screen and (min-width:789px) and (max-width:1024px) {
+    label.logo {
+        color: white;
+        font-size: 60px;
+        padding: 0 10px;
+        line-height: 70px;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+    }
+    .bar {
+        display: block;
+        padding: 5px 50px;
+        line-height: 70px;
+        float: right;
+        font-size: 60px;
+        cursor: pointer;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 65px;
+        font-size: 86px;
+        margin-left: 50px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 55px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    img.a {
+        float: left;
+        width: 40px;
+        height: 40px;
+    }
+    .sec {
+        text-align: center;
+        font-size: 90px;
+        padding-top: 50px;
+        text-shadow: 4px 4px black;
+    }
+    .sec1 {
+        margin-left: 50px;
+        font-size: 50px;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: lighter;
+        color: white;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        right: 20px;
+        z-index: 99;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+    }
+    .section {
+        width: 100%;
+        height: 70vh;
+        background-color: transparent;
+    }
+    /* loader */
+    /* Center the loader */
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        margin: -75px 0 0 -75px;
+        animation-name: spin;
+        animation-duration: 2s;
+    }
+    @-webkit-keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    @keyframes spin {
+        0% {
+            opacity: 0%;
+        }
+        25% {
+            opacity: 25%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        75% {
+            opacity: 75%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+    }
+    @-webkit-keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0px;
+            opacity: 1
+        }
+    }
+    @keyframes animatebottom {
+        from {
+            bottom: -100px;
+            opacity: 0
+        }
+        to {
+            bottom: 0;
+            opacity: 1
+        }
+    }
+    #myDiv {
+        display: none;
+    }
+    /*Bottom Nav*/
+    .column {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+        margin-right: 10px;
+        float: left;
+        width: 40%;
+        height: auto;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
+        /* Should be removed. Only for demonstration */
+    }
+    img.btm1 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 55px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    img.btm2 {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 45px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    #h21 {
+        text-align: left !important;
+        margin-left: 0px;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    img.blog {
+        position: absolute;
+        float: left;
+        top: 23%;
+        left: 200px;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px 5px black;
+        border: 0px;
+    }
 }
 
-  .bar{
-  display: block;
-  padding: 5px 50px;
-  line-height:70px;
-  float:right;
-  font-size:60px;
-  cursor:pointer;  
-  color: white;
-  }
-  .header-menu{
-      display: none;
-  }
-
-.sidenav .closebtn {
-position: absolute;
-top: 50px;
-right: 65px;
-font-size: 86px;
-margin-left: 50px;
-}
-
-.sidenav a {
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 55px;
-color: white;
-display: block;
-transition: 0.3s;
-}
-
-img.a{
-  float: left;
-  width: 40px;
-  height: 40px;
-  }
-.sec{
-    text-align: center;
-    font-size: 90px;
-    padding-top:50px;
-    text-shadow:4px 4px black;
-}
-
-.sec1{
-    margin-left:50px;
-    font-size: 50px;
-    font-family: 'Architects Daughter', cursive;
-    font-weight: lighter;
-    color: white;
-}
-
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 20px;
-    z-index: 99;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-  }
-  .section{
-      width: 100%;
-      height: 70vh;
-      background-color: transparent;
-  }
-/* loader */
-/* Center the loader */
-#loader {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -75px 0 0 -75px;
-    animation-name: spin;
-    animation-duration: 2s;
-
-  }
-  
-  @-webkit-keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  @keyframes spin {
-    0%   {opacity:0%;}
-    25%  {opacity:25%;}
-    50%  {opacity:50%;}
-    75%  {opacity:75%;}
-    100% {opacity:100%;}
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s;
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
-    display: none;
-  }
-
-
-  /*Bottom Nav*/
-  .column {
-    margin-top:0px;
-    margin-bottom:10px;
-    margin-left:40px;
-    margin-right:10px;
-    float: left;
-    width: 40%;
-    height:auto; 
-    font-family: 'Comic Neue', cursive;
-    font-weight:bold;
-    /* Should be removed. Only for demonstration */
-  }
-
-img.btm1{
-  float:left; 
-  width: 30px; 
-  height: 30px;
-  margin-top: 55px; 
-  margin-right: 20px; 
-  margin-left: 20px;
-}
-
-img.btm2{
- float:left; 
- width: 30px; 
- height: 30px; 
- margin-top: 45px; 
- margin-right: 20px; 
- margin-left: 20px;
-}
-#h21{
- text-align: left !important;
- margin-left:0px; 
- margin-top: 10px !important; 
- margin-bottom: 10px !important;
-}
-
-img.blog{
-  position:absolute;
-  float: left;
-  top:23%;
-  left:200px;  
-  width: 450px; 
-  height: 450px; 
-  border-radius: 50%; 
-  box-shadow: 0px 0px 20px 5px black; 
-  border: 0px;
-}
-}
 
 /*Medio Query*/
 
 @media (max-width: 768px) {
-  .bar {
-  display: block;
-  padding: 0 35px 0 10px;
-  line-height: 60px;
-  font-size: 25px;
-  color: white;
-  }
-  #myBtn {
-    width: 50px !important;
-    height: 50px !important;
-  }
-  nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.sec1 {
-  margin-left: 90px !important;
-}
-
+    .bar {
+        display: block;
+        padding: 0 35px 0 10px;
+        line-height: 60px;
+        font-size: 25px;
+        color: white;
+    }
+    #myBtn {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sec1 {
+        margin-left: 90px !important;
+    }
     img.a {
-      margin-left: 20px !important;
+        margin-left: 20px !important;
     }
-
     .column {
-    float: left;
-    width: 80%;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 20px !important;
-    height: auto;
-    font-family: 'Comic Neue', cursive;
-    font-weight: bold;
+        float: left;
+        width: 80%;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px !important;
+        height: auto;
+        font-family: 'Comic Neue', cursive;
+        font-weight: bold;
     }
-
     h2#h21 {
-      margin: 10px 0 10px 20px;
+        margin: 10px 0 10px 20px;
     }
-
     img.btm2 {
-    margin: 40px 19px 10px 0px; 
+        margin: 40px 19px 10px 0px;
     }
-    
     ul#h21 {
-      margin-left: 10px !important;
+        margin-left: 10px !important;
     }
-
     .h21 {
-      margin: 10px 0 10px 10px !important;
+        margin: 10px 0 10px 10px !important;
     }
-
     p#h21 {
-      font-size: 13px;
-      margin: 0 20px !important;
+        font-size: 13px;
+        margin: 0 20px !important;
     }
-    
-  }
-  *:not(.fab) {
+}
+
+*:not(.fab) {
     font-family: Arial !important;
     font-weight: 400 !important;
-  }
-  #myBtn {
+}
+
+#myBtn {
     width: 50px !important;
     height: 50px !important;
-  }
+}

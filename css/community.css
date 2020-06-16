@@ -89,12 +89,12 @@ img.a {
     float: right;
     color: white;
     font-size: 15px;
-    padding: 0px 40px;
-    line-height: 60px;
+    padding: 0px 2em;
+    line-height: 3em;
 }
 
-ul li {
-    margin-right: 10px;
+.header-menu ul li {
+    margin-right: 1em;
     font-weight: bold;
     display: inline-block;
 }
